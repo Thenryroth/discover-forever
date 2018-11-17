@@ -1,0 +1,735 @@
+@media screen and (max-width: 767px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (max-width: 991px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 991px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 992px) {
+}
+.clearfix:before,
+.clearfix:after {
+  -ms-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -moz-order: 1;
+  -ms-order: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.jumbotron {
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: flex;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 992px) {
+  .container-benefits .row {
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  .container-carousel .row {
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: flex;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.page-now .prevent-overflow {
+  overflow: hidden;
+}
+.jumbotron {
+  margin-bottom: 0;
+  padding: 100px 0;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .jumbotron {
+    padding-top: 175px;
+    padding-bottom: 175px;
+  }
+}
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+  padding: 0 30px;
+  margin: 0;
+}
+.jumbotron h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0 0 .35em;
+}
+@media (min-width: 768px) {
+  .jumbotron h1 {
+    font-size: 5.625em;
+  }
+}
+.jumbotron p {
+  font-size: 1.25em;
+}
+.jumbotron p span {
+  display: block;
+}
+@media (max-width: 767px) {
+  .jumbotron p span {
+    margin-top: 1em;
+  }
+}
+.jumbotron .btn {
+  margin: 0.5em 0 0;
+}
+.jumbotron-bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.page-now .jumbotron-hero {
+  border-bottom: 3px solid #CDF564;
+}
+.page-party .jumbotron-hero {
+  background: url(/i/moments/party-hero-frame-75.jpg) right / auto 100% no-repeat #725D5F;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .page-party .jumbotron-hero {
+    background-position: center;
+  }
+}
+.page-party .jumbotron-hero h1 {
+  font-weight: 900;
+}
+.page-party .jumbotron-hero .btn {
+  color: #FFF;
+  background-color: #000;
+}
+.page-party .jumbotron-hero .btn:hover {
+  color: #FFF;
+  background-color: #FFF;
+}
+.page-party .jumbotron-hero .btn:focus {
+  color: #FFF;
+  background-color: #000;
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) inset;
+}
+.page-party .jumbotron-hero .btn:active,
+.page-party .jumbotron-hero .btn.active,
+.open > .dropdown-toggle.page-party .jumbotron-hero .btn,
+.page-party .jumbotron-hero .btn:active:hover,
+.page-party .jumbotron-hero .btn.active:hover,
+.open > .dropdown-toggle.page-party .jumbotron-hero .btn:hover {
+  background-color: #000;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.page-party .jumbotron-hero .btn.disabled,
+.page-party .jumbotron-hero .btn[disabled],
+fieldset[disabled] .page-party .jumbotron-hero .btn {
+  background-color: #C1C3C6;
+}
+.page-party .jumbotron-hero .btn:hover {
+  color: #000;
+}
+.page-party .jumbotron-hero .btn:focus,
+.page-party .jumbotron-hero .btn:active {
+  color: #FFF;
+}
+.page-discoverweekly .jumbotron-hero {
+  background: url(/i/moments/discover-new-hero-bg.jpg) center;
+  border-bottom: 3px solid #C3F0C8;
+}
+.page-discoverweekly .jumbotron-hero .btn.btn-default {
+  color: #000;
+  background-color: #C3F0C8;
+}
+.page-discoverweekly .jumbotron-hero .btn.btn-default:hover {
+  color: #000;
+  background-color: #9ae6a3;
+}
+.page-discoverweekly .jumbotron-hero .btn.btn-default:focus {
+  color: #000;
+  background-color: #86e190;
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1) inset;
+}
+.page-discoverweekly .jumbotron-hero .btn.btn-default:active,
+.page-discoverweekly .jumbotron-hero .btn.btn-default.active,
+.open > .dropdown-toggle.page-discoverweekly .jumbotron-hero .btn.btn-default,
+.page-discoverweekly .jumbotron-hero .btn.btn-default:active:hover,
+.page-discoverweekly .jumbotron-hero .btn.btn-default.active:hover,
+.open > .dropdown-toggle.page-discoverweekly .jumbotron-hero .btn.btn-default:hover {
+  background-color: #86e190;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.page-discoverweekly .jumbotron-hero .btn.btn-default.disabled,
+.page-discoverweekly .jumbotron-hero .btn.btn-default[disabled],
+fieldset[disabled] .page-discoverweekly .jumbotron-hero .btn.btn-default {
+  background-color: #C1C3C6;
+}
+.page-discoverweekly .jumbotron-hero .btn.btn-stroked-light {
+  color: #616467;
+  -webkit-box-shadow: 0 0 0 2px #616467 inset;
+          box-shadow: 0 0 0 2px #616467 inset;
+  background-color: transparent;
+}
+.page-discoverweekly .jumbotron-hero .btn.btn-stroked-light:hover {
+  color: #FFF;
+  background-color: #616467;
+}
+.page-discoverweekly .jumbotron-hero .btn.btn-stroked-light:focus {
+  color: #FFF;
+  background-color: #616467;
+  -webkit-box-shadow: 0 0 0 2px #000 inset;
+          box-shadow: 0 0 0 2px #000 inset;
+}
+.page-discoverweekly .jumbotron-hero .btn.btn-stroked-light:active,
+.page-discoverweekly .jumbotron-hero .btn.btn-stroked-light.active,
+.open > .dropdown-toggle.page-discoverweekly .jumbotron-hero .btn.btn-stroked-light {
+  color: #FFF;
+  background-color: #000;
+}
+.page-discoverweekly .jumbotron-hero .btn.btn-stroked-light.disabled,
+.page-discoverweekly .jumbotron-hero .btn.btn-stroked-light[disabled],
+fieldset[disabled] .page-discoverweekly .jumbotron-hero .btn.btn-stroked-light {
+  color: #D9DADC;
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 0 2px #D9DADC inset;
+          box-shadow: 0 0 0 2px #D9DADC inset;
+}
+.page-discoverweekly .jumbotron-hero p {
+  color: #FFF;
+}
+.page-discoverweekly .jumbotron-hero .small {
+  font-size: 14px;
+  color: #FFF;
+}
+.page-discoverweekly .jumbotron-hero h1 {
+  color: #C3F0C8;
+}
+.page-rewind .jumbotron-hero {
+  background: url(/i/moments/summer-rewind-background-clouds-2018.jpg) center / cover;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.page-rewind .jumbotron-hero .container {
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+.page-rewind .jumbotron-hero .container h1 {
+  color: white;
+}
+.page-rewind .jumbotron-hero .container p {
+  max-width: 20em;
+}
+.page-rewind .jumbotron-hero .btn {
+  min-width: 18em;
+}
+.page-rewind .jumbotron-hero .btn.btn-default {
+  color: #F037A5;
+  -webkit-box-shadow: 0 0 0 2px #EF37A5 inset;
+          box-shadow: 0 0 0 2px #EF37A5 inset;
+}
+.page-rewind .jumbotron-hero .btn.btn-default:focus,
+.page-rewind .jumbotron-hero .btn.btn-default:active,
+.page-rewind .jumbotron-hero .btn.btn-default:hover {
+  color: white;
+  background-color: #F037A5;
+}
+.page-rewind .jumbotron-hero a:link .page-rewind .jumbotron-hero a:active,
+.page-rewind .jumbotron-hero a:visited,
+.page-rewind .jumbotron-hero a:hover {
+  color: #F037A5;
+}
+.page-rewind .wrap {
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.page-discoverweekly .wrapper-carousel {
+  background-color: #C3F0C8;
+  height: 100%
+}
+.container-carousel {
+  background-color: #FFF;
+  padding-top: 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  height: 100%
+}
+@media screen and (min-width: 992px) {
+  .container-carousel {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container-carousel .col-md-8 {
+    min-height: 0;
+  }
+}
+.page-discoverweekly .container-carousel {
+  background-color: #C3F0C8;
+}
+.carousel {
+  margin: 0 15px;
+  overflow: hidden;
+}
+.carousel h2 {
+  font-size: 2.5em;
+}
+.carousel p {
+  font-size: 1.125em;
+}
+@media screen and (max-width: 991px) {
+  .carousel {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+.carousel .item {
+  min-height: 300px;
+  text-align: left;
+}
+.carousel-indicators {
+  left: 0;
+}
+@media screen and (max-width: 991px) {
+  .carousel-indicators {
+    margin: 0 auto;
+    position: relative;
+    top: -93px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .carousel-indicators {
+    top: -27px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carousel-indicators {
+    text-align: left;
+    bottom: 0;
+    margin-left: 3px;
+    padding-top: 30px;
+  }
+  .carousel-indicators::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    border-bottom: 3px solid #000;
+    margin-bottom: 30px;
+  }
+}
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  background-color: #D9DADC;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 3px;
+  vertical-align: middle;
+}
+.page-discoverweekly .carousel-indicators li {
+  background-color: #000;
+  border: 0;
+}
+.carousel-indicators .active {
+  width: 8px;
+  height: 8px;
+  background-clip: padding-box;
+  background-color: #000;
+  border: 2px solid transparent;
+  -webkit-box-shadow: 0 0 0 1px #000;
+          box-shadow: 0 0 0 1px #000;
+}
+.page-discoverweekly .carousel-indicators .active {
+  border: 1px solid #FFF;
+}
+.carousel-control {
+  bottom: 20%;
+  top: auto;
+}
+@media screen and (max-width: 767px) {
+  .carousel-control {
+    bottom: 24px;
+  }
+}
+.carousel-control.left {
+  right: auto;
+  left: 0;
+}
+.carousel-control.right {
+  right: 0;
+}
+@media screen and (min-width: 992px) {
+  .carousel-control {
+    display: none;
+  }
+}
+.carousel-iphones {
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .carousel-iphones {
+    -webkit-box-shadow: inset 0 -60px 60px -60px #000;
+            box-shadow: inset 0 -60px 60px -60px #000;
+    margin: 0 -15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel-iphones {
+    min-height: 494px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .carousel-iphones {
+    min-height: 494px;
+    margin-bottom: -30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .carousel-iphones {
+    min-height: 535px;
+  }
+}
+.iphone-device {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%22360%22%20height%3D%22730%22%20viewBox%3D%220%200%20360%20730%22%20fill%3D%22%23222326%22%3E%3Cpath%20d%3D%22M359.872,152.935%20L358.182,152.935%20C358.126,152.935%20358.077,152.911%20358.023,152.903%20L358.023,673.629%20C358.023,705.263%20332.228,731.000%20300.522,731.000%20L60.407,731.000%20C28.702,731.000%202.908,705.263%202.908,673.629%20L2.908,285.538%20C2.750,285.658%202.563,285.741%202.350,285.741%20L0.940,285.741%20C0.421,285.741%200.000,285.321%200.000,284.803%20L0.000,225.698%20C0.000,225.180%200.421,224.760%200.940,224.760%20L2.350,224.760%20C2.563,224.760%202.750,224.843%202.908,224.963%20L2.908,210.484%20C2.750,210.604%202.563,210.687%202.350,210.687%20L0.940,210.687%20C0.421,210.687%200.000,210.267%200.000,209.749%20L0.000,150.644%20C0.000,150.126%200.421,149.706%200.940,149.706%20L2.350,149.706%20C2.563,149.706%202.750,149.789%202.908,149.909%20L2.908,108.877%20C2.877,108.880%202.851,108.895%202.820,108.895%20L1.410,108.895%20C0.891,108.895%200.470,108.475%200.470,107.957%20L0.470,78.874%20C0.470,78.355%200.891,77.936%201.410,77.936%20L2.820,77.936%20C2.851,77.936%202.877,77.950%202.908,77.953%20L2.908,57.371%20C2.908,25.736%2028.702,-0.001%2060.407,-0.001%20L300.522,-0.001%20C332.228,-0.001%20358.023,25.736%20358.023,57.371%20L358.023,99.870%20C358.077,99.862%20358.126,99.837%20358.182,99.837%20L359.872,99.837%20C360.494,99.837%20360.998,100.341%20360.998,100.962%20L360.998,151.811%20C360.998,152.432%20360.494,152.935%20359.872,152.935%20ZM350.013,57.371%20C350.013,30.145%20327.812,7.995%20300.522,7.995%20L60.407,7.995%20C33.119,7.995%2010.917,30.145%2010.917,57.371%20L10.917,673.629%20C10.917,700.854%2033.119,723.004%2060.407,723.004%20L300.522,723.004%20C327.812,723.004%20350.013,700.854%20350.013,673.629%20L350.013,57.371%20ZM181.578,708.402%20C166.336,708.402%20153.934,696.022%20153.934,680.804%20C153.934,665.587%20166.336,653.206%20181.578,653.206%20C196.822,653.206%20209.224,665.587%20209.224,680.804%20C209.224,696.022%20196.822,708.402%20181.578,708.402%20ZM181.578,657.204%20C168.543,657.204%20157.939,667.791%20157.939,680.804%20C157.939,693.817%20168.543,704.404%20181.578,704.404%20C194.614,704.404%20205.219,693.817%20205.219,680.804%20C205.219,667.791%20194.614,657.204%20181.578,657.204%20ZM201.968,54.998%20L160.168,54.998%20C156.442,54.998%20153.410,51.503%20153.410,47.783%20C153.410,44.062%20156.442,41.005%20160.168,41.005%20L201.968,41.005%20C205.694,41.005%20208.726,44.062%20208.726,47.783%20C208.726,51.503%20205.694,54.998%20201.968,54.998%20ZM201.968,45.034%20L160.168,45.034%20C158.650,45.034%20157.415,46.267%20157.415,47.783%20C157.415,49.298%20158.650,51.000%20160.168,51.000%20L201.968,51.000%20C203.487,51.000%20204.722,49.298%20204.722,47.783%20C204.722,46.267%20203.487,45.034%20201.968,45.034%20ZM181.221,31.612%20C178.870,31.612%20176.965,29.710%20176.965,27.364%20C176.965,25.018%20178.870,23.116%20181.221,23.116%20C183.571,23.116%20185.476,25.018%20185.476,27.364%20C185.476,29.710%20183.571,31.612%20181.221,31.612%20ZM133.087,49.581%20C132.092,49.581%20131.286,48.776%20131.286,47.783%20C131.286,46.789%20132.092,45.984%20133.087,45.984%20C134.082,45.984%20134.889,46.789%20134.889,47.783%20C134.889,48.776%20134.082,49.581%20133.087,49.581%20Z%22/%3E%3C/svg%3E'), url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%22348%22%20height%3D%22724%22%20viewBox%3D%220%200%20348%20724%22%20fill%3D%22%23000%22%3E%3Cpath%20d%3D%22M293.520,-0.001%20L53.479,-0.001%20C23.944,-0.001%200.000,23.895%200.000,53.372%20L0.000,669.627%20C0.000,699.104%2023.944,723.000%2053.479,723.000%20L293.520,723.000%20C323.055,723.000%20346.999,699.104%20346.999,669.627%20L346.999,53.372%20C346.999,23.895%20323.055,-0.001%20293.520,-0.001%20Z%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  display: inline-block;
+  background-size: 100%, 96.25%;
+  max-width: none;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 200px;
+  height: 355px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 768px) {
+  .iphone-device {
+    width: 280px;
+    height: 497px;
+    padding-top: 79px;
+    padding-bottom: 79px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
+.iphone-device.white {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%22360%22%20height%3D%22730%22%20viewBox%3D%220%200%20360%20730%22%20fill%3D%22%23D9DADC%22%3E%3Cpath%20d%3D%22M359.872,152.935%20L358.182,152.935%20C358.126,152.935%20358.077,152.911%20358.023,152.903%20L358.023,673.629%20C358.023,705.263%20332.228,731.000%20300.522,731.000%20L60.407,731.000%20C28.702,731.000%202.908,705.263%202.908,673.629%20L2.908,285.538%20C2.750,285.658%202.563,285.741%202.350,285.741%20L0.940,285.741%20C0.421,285.741%200.000,285.321%200.000,284.803%20L0.000,225.698%20C0.000,225.180%200.421,224.760%200.940,224.760%20L2.350,224.760%20C2.563,224.760%202.750,224.843%202.908,224.963%20L2.908,210.484%20C2.750,210.604%202.563,210.687%202.350,210.687%20L0.940,210.687%20C0.421,210.687%200.000,210.267%200.000,209.749%20L0.000,150.644%20C0.000,150.126%200.421,149.706%200.940,149.706%20L2.350,149.706%20C2.563,149.706%202.750,149.789%202.908,149.909%20L2.908,108.877%20C2.877,108.880%202.851,108.895%202.820,108.895%20L1.410,108.895%20C0.891,108.895%200.470,108.475%200.470,107.957%20L0.470,78.874%20C0.470,78.355%200.891,77.936%201.410,77.936%20L2.820,77.936%20C2.851,77.936%202.877,77.950%202.908,77.953%20L2.908,57.371%20C2.908,25.736%2028.702,-0.001%2060.407,-0.001%20L300.522,-0.001%20C332.228,-0.001%20358.023,25.736%20358.023,57.371%20L358.023,99.870%20C358.077,99.862%20358.126,99.837%20358.182,99.837%20L359.872,99.837%20C360.494,99.837%20360.998,100.341%20360.998,100.962%20L360.998,151.811%20C360.998,152.432%20360.494,152.935%20359.872,152.935%20ZM350.013,57.371%20C350.013,30.145%20327.812,7.995%20300.522,7.995%20L60.407,7.995%20C33.119,7.995%2010.917,30.145%2010.917,57.371%20L10.917,673.629%20C10.917,700.854%2033.119,723.004%2060.407,723.004%20L300.522,723.004%20C327.812,723.004%20350.013,700.854%20350.013,673.629%20L350.013,57.371%20ZM181.578,708.402%20C166.336,708.402%20153.934,696.022%20153.934,680.804%20C153.934,665.587%20166.336,653.206%20181.578,653.206%20C196.822,653.206%20209.224,665.587%20209.224,680.804%20C209.224,696.022%20196.822,708.402%20181.578,708.402%20ZM181.578,657.204%20C168.543,657.204%20157.939,667.791%20157.939,680.804%20C157.939,693.817%20168.543,704.404%20181.578,704.404%20C194.614,704.404%20205.219,693.817%20205.219,680.804%20C205.219,667.791%20194.614,657.204%20181.578,657.204%20ZM201.968,54.998%20L160.168,54.998%20C156.442,54.998%20153.410,51.503%20153.410,47.783%20C153.410,44.062%20156.442,41.005%20160.168,41.005%20L201.968,41.005%20C205.694,41.005%20208.726,44.062%20208.726,47.783%20C208.726,51.503%20205.694,54.998%20201.968,54.998%20ZM201.968,45.034%20L160.168,45.034%20C158.650,45.034%20157.415,46.267%20157.415,47.783%20C157.415,49.298%20158.650,51.000%20160.168,51.000%20L201.968,51.000%20C203.487,51.000%20204.722,49.298%20204.722,47.783%20C204.722,46.267%20203.487,45.034%20201.968,45.034%20ZM181.221,31.612%20C178.870,31.612%20176.965,29.710%20176.965,27.364%20C176.965,25.018%20178.870,23.116%20181.221,23.116%20C183.571,23.116%20185.476,25.018%20185.476,27.364%20C185.476,29.710%20183.571,31.612%20181.221,31.612%20ZM133.087,49.581%20C132.092,49.581%20131.286,48.776%20131.286,47.783%20C131.286,46.789%20132.092,45.984%20133.087,45.984%20C134.082,45.984%20134.889,46.789%20134.889,47.783%20C134.889,48.776%20134.082,49.581%20133.087,49.581%20Z%22/%3E%3C/svg%3E'), url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%22348%22%20height%3D%22724%22%20viewBox%3D%220%200%20348%20724%22%20fill%3D%22%23FFF%22%3E%3Cpath%20d%3D%22M293.520,-0.001%20L53.479,-0.001%20C23.944,-0.001%200.000,23.895%200.000,53.372%20L0.000,669.627%20C0.000,699.104%2023.944,723.000%2053.479,723.000%20L293.520,723.000%20C323.055,723.000%20346.999,699.104%20346.999,669.627%20L346.999,53.372%20C346.999,23.895%20323.055,-0.001%20293.520,-0.001%20Z%22/%3E%3C/svg%3E');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  display: inline-block;
+  background-size: 100%, 96.25%;
+  max-width: none;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 200px;
+  height: 355px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .iphone-device.white {
+    width: 280px;
+    height: 497px;
+    padding-top: 79px;
+    padding-bottom: 79px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
+.carousel-iphones .iphone-device.primary {
+  position: absolute;
+  bottom: -200px;
+  z-index: 1;
+  right: 0;
+}
+.carousel-iphones .iphone-device.secondary {
+  right: 30%;
+  bottom: -290px;
+  position: absolute;
+}
+.iphone-screen {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.iphone-screen > .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out 1s;
+  transition: opacity 0.6s ease-out 1s;
+}
+.iphone-screen > .slide.active {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  opacity: 1;
+  z-index: 1;
+}
+.wrapper-carousel-shows * {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+.container-carousel-shows .carousel-iphones {
+  min-height: 489px;
+}
+@media screen and (min-width: 992px) {
+  .container-carousel-shows .carousel-iphones {
+    min-height: 279px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container-carousel-shows .carousel-iphones {
+    min-height: 481px;
+  }
+}
+.iphone {
+  overflow: hidden;
+  position: relative;
+  height: 489px;
+}
+@media screen and (min-width: 768px) {
+  .iphone {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .iphone {
+    overflow: visible;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .iphone {
+    height: 691px;
+  }
+}
+.iphone > .iphone-slide {
+  width: 100%;
+  height: 489px;
+  position: relative;
+}
+@media screen and (min-width: 1600px) {
+  .iphone > .iphone-slide {
+    height: 691px;
+  }
+}
+.iphone .slide {
+  bottom: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  -webkit-transition: opacity 0.8s ease-out;
+  transition: opacity 0.8s ease-out;
+}
+.iphone .slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+.iphone .slide1,
+.iphone .slide3 {
+  width: 300px;
+}
+@media screen and (min-width: 1600px) {
+  .iphone .slide1,
+  .iphone .slide3 {
+    width: 424px;
+  }
+}
+.iphone .slide2 {
+  width: 652px;
+}
+@media screen and (min-width: 1600px) {
+  .iphone .slide2 {
+    width: 826px;
+  }
+}
+.iphone.primary {
+  z-index: 1;
+}
+.iphone.primary .slide1,
+.iphone.primary .slide3 {
+  left: auto;
+  right: 0;
+}
+@media screen and (max-width: 767px) {
+  .iphone.primary .slide1,
+  .iphone.primary .slide3 {
+    left: 50%;
+    margin-left: -150px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .iphone.primary .slide1 {
+    right: 10%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .iphone.primary .slide1 {
+    right: 0;
+  }
+}
+.iphone.primary .slide2 {
+  bottom: -5%;
+}
+@media screen and (max-width: 767px) {
+  .iphone.primary .slide2 {
+    max-width: none;
+    width: 652px;
+    left: 50%;
+    margin-left: -326px;
+    bottom: 25%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .iphone.primary .slide2 {
+    max-width: none;
+    right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .iphone.primary .slide3 {
+    right: 5%;
+  }
+}
+.iphone.secondary {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .iphone.secondary {
+    display: block;
+    z-index: 0;
+  }
+}
+.iphone.secondary .slide1,
+.iphone.secondary .slide3 {
+  left: 10%;
+  right: auto;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .iphone.secondary .slide1,
+  .iphone.secondary .slide3 {
+    left: 0;
+  }
+}
+.iphone.secondary .slide1 {
+  bottom: -10%;
+}
+@media screen and (min-width: 992px) {
+  .iphone.secondary .slide1 {
+    bottom: -5%;
+  }
+}
+.iphone.secondary .slide2 {
+  bottom: -15%;
+}
+@media screen and (min-width: 768px) {
+  .iphone.secondary .slide2 {
+    right: 2%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .iphone.secondary .slide2 {
+    bottom: -5%;
+  }
+}
+.iphone.secondary .slide3 {
+  bottom: -40%;
+}
+@media screen and (min-width: 768px) {
+  .iphone.secondary .slide3 {
+    left: auto;
+    right: 35%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .iphone.secondary .slide3 {
+    bottom: -30%;
+  }
+}
