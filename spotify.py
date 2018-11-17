@@ -7,8 +7,8 @@ import base64
 app = Flask(__name__)
 
 
-client_id = '3ff0da633e4b44b992630ccf705689a9'
-client_secret = '6866b5a966ee45698bf8adf7ef2a152f'
+client_id = '2b18dda2b5d445e4ae09f6df7f10df8a'
+client_secret = '72243f3b650947e2a97f747aaeaf6d21'
 authorization_base_url = 'https://accounts.spotify.com/authorize'
 token_url = 'https://accounts.spotify.com/api/token'
 
