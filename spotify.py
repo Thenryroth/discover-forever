@@ -26,9 +26,11 @@ def hello_world():
                             url='https://accounts.spotify.com/api/token',
                             data=body
                             ).json()
-    header = {'Authorization':f"Bearer {token['access_token']}"}
+    print(token)
+    header = {'Authorization':f"Bearer {token['access_token']}",'Content-Type':'application/json'}
 
     user = requests.get(url='https://api.spotify.com/v1/me',headers=header).json()
+    print(user)
     playlists = requests.get(url='https://api.spotify.com/v1/me/playlists',headers=header).json()
     discover_forever_id = None
     for p in playlists['items']:
@@ -36,15 +38,16 @@ def hello_world():
             discover_id = p['id']
         elif p['name'] == 'Discover Forever':
             discover_forever_id = p['id']
-    # if not discover_forever_id:
-    #     playlist = {
-    #         'name':'Discover Forever',
-    #         'description': 'Saves all your Spotify Discover suggestions into one playlist'
-    #     }
-    #     new_playlist = requests.post(url=f"https://api.spotify.com/v1/users/{user['id']}/playlists",headers=header).json()
-        # discover_forever_id = new_playlist['id']
-    tracks = requests.get(url=f'https://api.spotify.com/v1/playlists/{discover_id}/tracks',headers=header).json()
-    return redirect(f"/success/{user['id']}/{discover_id}")
+
+    if not discover_forever_id:
+        playlist = {
+            'name':'Discover Forever'}
+        new_playlist = requests.post(url=f"https://api.spotify.com/v1/users/{user['id']}/playlists",headers=header,data=playlist).json()
+        print(new_playlist)
+        discover_forever_id = new_playlist['id']
+    discover_forever_playlist = requests.get(url=f'https://api.spotify.com/v1/playlists/{discover_forever_id}',headers=header).json()
+    # tracks = requests.get(url=f'https://api.spotify.com/v1/playlists/{discover_id}/tracks',headers=header).json()
+    return redirect(f"/success/{user['id']}/{discover_fore['name']}")
 
 
 @app.route('/success/<user_id>/<playlist_id>',methods=['GET'])
