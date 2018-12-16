@@ -4,6 +4,7 @@ import requests
 from requests_oauthlib import OAuth2Session
 import pdb
 import base64
+import json
 app = Flask(__name__)
 
 
@@ -40,14 +41,30 @@ def hello_world():
             discover_forever_id = p['id']
 
     if not discover_forever_id:
-        playlist = {
-            'name':'Discover Forever'}
-        new_playlist = requests.post(url=f"https://api.spotify.com/v1/users/{user['id']}/playlists",headers=header,data=playlist).json()
-        print(new_playlist)
+        playlist_body = {
+            "name":"Discover Forever",
+            "description": "A collection of all your Discover Weekly songs",
+            "public": True
+
+            }
+        new_playlist = requests.post(
+                            url=f"https://api.spotify.com/v1/users/{user['id']}/playlists",
+                            headers=header,
+                            data=json.dumps(playlist_body)).json()
+        print(new_playlist,f"https://api.spotify.com/v1/users/{user['id']}/playlists")
         discover_forever_id = new_playlist['id']
+    print('discover_id-',discover_id)
     discover_forever_playlist = requests.get(url=f'https://api.spotify.com/v1/playlists/{discover_forever_id}',headers=header).json()
-    # tracks = requests.get(url=f'https://api.spotify.com/v1/playlists/{discover_id}/tracks',headers=header).json()
-    return redirect(f"/success/{user['id']}/{discover_fore['name']}")
+    tracks = requests.get(url=f'https://api.spotify.com/v1/playlists/{discover_id}/tracks',headers=header).json()
+    track_ids = []
+    for track in tracks['items']:
+        track_ids.append(track['track']['uri'])
+    tracks_body = {'uris':track_ids}
+    add_songs_requests = requests.post(f'https://api.spotify.com/v1/playlists/{discover_forever_id}/tracks',
+                                   headers=header,
+                                   data=json.dumps(tracks_body)).json()
+    return redirect(f"/success/{user['id']}/{discover_forever_playlist['name']}")
+
 
 
 @app.route('/success/<user_id>/<playlist_id>',methods=['GET'])
