@@ -70,6 +70,10 @@ def hello_world():
     print(new_user.id,new_user.refresh_token)
     new_playlist = Playlist(discover_forever_id,discover_id)
     print('discover_id-',discover_id)
+    playlist_exists = new_playlist.exists(new_playlist.id)
+    print(playlist_exists)
+    if not playlist_exists:
+        new_playlist.save_playlist()
     discover_forever_playlist = requests.get(url=f'https://api.spotify.com/v1/playlists/{discover_forever_id}',headers=header).json()
     tracks = requests.get(url=f'https://api.spotify.com/v1/playlists/{discover_id}/tracks',headers=header).json()
     track_ids = []
