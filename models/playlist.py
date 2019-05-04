@@ -18,12 +18,13 @@ class Playlist:
         """.format(user_id=id)
 
     def save_user(self):
+        db = DB()
         insert_statement = self.insert_string()
         return db.execute_query(insert_statement)
 
 
     def exists(self,user_id):
+        db = DB()
         select_statement = self.select_statement(user_id)
-
         resp = db.execute_query(select_statement)
         return resp

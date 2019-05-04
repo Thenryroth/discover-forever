@@ -18,13 +18,15 @@ class User:
         """.format(user_id=id)
 
     def save_user(self):
+        db = DB()
         insert_statement = self.insert_string()
         values = {"id":self.id,"playlist_id":self.playlist_id,"refresh_token":self.refresh_token}
-        return DB.execute_insert(insert_statement,values)
+        return db.execute_insert(insert_statement,values)
 
 
     def exists(self,user_id):
+        db = DB()
         select_statement = self.select_statement(user_id)
 
-        resp = DB.execute_query(select_statement)
+        resp = db.execute_query(select_statement)
         return resp

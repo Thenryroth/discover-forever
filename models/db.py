@@ -2,15 +2,21 @@ import psycopg2
 from contextlib import contextmanager
 
 class DB:
+    def __init__(self):
+        self.dbname = "postgres"
+        self.user ='postgres'
+        self.password = 'postgres'
+        self.host = 'localhost'
+        self.port = 5432
 
     @contextmanager
     def get_conn(self):
         conn = psycopg2.connect(
-                    dbname='postgres',
-                    user='hudsonbuzby',
-                    password='postgres',
-                    host='localhost',
-                    port=5432,
+                    dbname=self.dbname,
+                    user=self.user,
+                    password=self.password,
+                    host=self.host,
+                    port=self.port,
 
                 )
         yield conn
