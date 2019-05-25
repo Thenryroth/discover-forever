@@ -32,16 +32,11 @@ def hello_world():
     access_token = token['access_token']
     refresh_token = token['refresh_token']
     header = {'Authorization':f"Bearer {access_token}",'Content-Type':'application/json'}
-    ###
-    ### I should be able to call this
-    ### auth_instance.access_token
-    ### auth_instance.refresh_token
 
     user = requests.get(url='https://api.spotify.com/v1/me',headers=header).json()
     user_id = user['id']
     # print(user)
     playlists = requests.get(url='https://api.spotify.com/v1/me/playlists',headers=header).json()
-    print(playlists)
     discover_forever_id = None
     for p in playlists['items']:
         if p['name'] == 'Discover Weekly':
@@ -57,33 +52,22 @@ def hello_world():
 
             }
         new_playlist = requests.post(
-                            url=f"https://api.spotify.com/v1/users/{user['id']}/playlists",
-                            headers=header,
-                            data=json.dumps(playlist_body)).json()
-        print(new_playlist,f"https://api.spotify.com/v1/users/{user['id']}/playlists")
+                url=f"https://api.spotify.com/v1/users/{user['id']}/playlists",
+                headers=header,
+                data=json.dumps(playlist_body)).json()
         discover_forever_id = new_playlist['id']
     new_user = User(user_id,discover_forever_id,refresh_token)
-    user_exists = new_user.exists(new_user.id)
-    print(user_exists)
-    if not user_exists:
+    if not new_user.exists(new_user.id):
         new_user.save_user()
+    forever_playlist = Playlist(discover_forever_id,discover_id)
 
-    print(new_user.id,new_user.refresh_token)
-    new_playlist = Playlist(discover_forever_id,discover_id)
-    print('discover_id-',discover_id)
-    playlist_exists = new_playlist.exists(new_playlist.id)
-    print(playlist_exists)
-    if not playlist_exists:
-        new_playlist.save_playlist()
-    discover_forever_playlist = requests.get(url=f'https://api.spotify.com/v1/playlists/{discover_forever_id}',headers=header).json()
-    tracks = requests.get(url=f'https://api.spotify.com/v1/playlists/{discover_id}/tracks',headers=header).json()
-    track_ids = []
-    for track in tracks['items']:
-        track_ids.append(track['track']['uri'])
-    tracks_body = {'uris':track_ids}
-    add_songs_requests = requests.post(f'https://api.spotify.com/v1/playlists/{discover_forever_id}/tracks',
-                                   headers=header,
-                                   data=json.dumps(tracks_body)).json()
+    if not forever_playlist.exists(forever_playlist.id):
+        forever_playlist.save_playlist()
+    discover_forever_playlist = requests.get(
+            url=f'https://api.spotify.com/v1/playlists/{discover_forever_id}',
+            headers=header).json()
+    new_playlist.save_tracks(header)
+
     return redirect(f"/success/{user['id']}/{discover_forever_playlist['name']}")
 
 
