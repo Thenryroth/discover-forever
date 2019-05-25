@@ -41,6 +41,7 @@ def hello_world():
     user_id = user['id']
     # print(user)
     playlists = requests.get(url='https://api.spotify.com/v1/me/playlists',headers=header).json()
+    print(playlists)
     discover_forever_id = None
     for p in playlists['items']:
         if p['name'] == 'Discover Weekly':
