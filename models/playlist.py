@@ -21,6 +21,10 @@ class Playlist:
         return """ select * from spotify.user where id = '{user_id}'
         """.format(user_id=id)
 
+    def select_all_statement(self):
+        return """ select * from spotify.user u
+        inner join spotify.playlist p
+        on u.playlist_id = p.id """
     def save_user(self):
         db = DB()
         insert_statement = self.insert_string()
@@ -44,3 +48,8 @@ class Playlist:
         add_songs_requests = requests.post(f'https://api.spotify.com/v1/playlists/{self.id}/tracks',
                                        headers=header,
                                        data=json.dumps(tracks_body)).json()
+
+    def update_all(self):
+        db = DB()
+        users = db.execute_query(self.select_all_statement)
+        ## this returns an array of users
